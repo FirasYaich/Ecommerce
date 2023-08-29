@@ -1,0 +1,26 @@
+<p>listproduits works!</p>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>reference</th>
+            <th>designation</th>
+            <th>image</th>
+            <th>marque</th>
+            <th>prix</th>
+            <th>qtestock</th>
+            <th>edition</th>
+            <th>Supprimer</th>
+        </tr>
+    </thead>
+  <tr *ngFor="let p of products">
+    <td>{{p.reference}}</td>
+    <td>{{p.designation}}</td>
+    <td>{{p.imageart}}</td>
+    <td>{{p.marque}}</td>
+    <td>{{p.prix}}</td>
+    <td>{{p.qtestock}}</td>
+    <td><button type="button" class="btn btn-warning">Edit</button></td>
+    <td><button type="button" class="btn btn-danger">Deleat</button></td>
+  </tr>
+</table>
